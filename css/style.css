@@ -98,18 +98,58 @@ main {
 	border: solid 3px darkgray;
 	height: 90%;  /* manipulate here for overlapping of Form */
 	background-color: white;
-	opacity: 0.75;
+	opacity: 0.8;
 	margin: 0 10% 0 10%;
 
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
+
+#inputOutputForm h1 {
+	padding: 3% 0 3% 0;
+	font-size: 2.5em;
+	text-align: center;
+	align-self: center;
+	font-weight: normal;
+}
+
+#inputForms {
+	border: 1px black solid;
+	width: 400px;
+	height: 300px;
+	padding: 5% 0 5% 0;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.dataInput {
+	width: 40%;
+}
+
+.inputClass {
+	/* Make Input Forms WHITE  */
+}
+
+
+
+
+
+
+
+
+
+
 
 /* mainSUB - Content */
 #mainSubContent {
+	/* border: solid black 1px; */
 	background-color: #D4D4D4;
-	height: 170px;
+	height: 180px;
 	text-align: center;
+	padding: 2% 0 0 0;
 
 	display: flex;
 	justify-content: center;
@@ -122,19 +162,8 @@ main {
 }
 
 #mainSubContent p {
-	font-size: 1.2em;
+	font-size: 1.3em;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 #result {
 	color: green;
@@ -142,6 +171,31 @@ main {
 /* SUB CONTENT ----------------------------------------------------------------------------------------- */
 #subContent {
 	/* border: solid 1px black; */
+	margin: 10% 0 10% 0;
+
+	display: flex;
+	justify-content: space-around;
+}
+
+#subContent li {
+	/* border: solid black 1px; */
+	width: 70%;
+	margin: 5% 0 5% 7%;
+
+}
+
+#subContent ul {
+	padding-bottom: 5%;
+	margin-bottom: 5%;
+	border-bottom: 1px solid lightgray;
+
+}
+
+.subBoxes {
+	border: solid 3px lightgray;
+	border-top: solid 3px black;
+	width: 35%;
+	padding: 2%;
 }
 
 
@@ -149,5 +203,51 @@ main {
 
 /* FOOTER----------------------------------------------------------------------------------------------- */
 footer {
-	border: solid black 1px;
+	height: 250px;
+	background-color: black;
+}
+
+#footerNav {
+	/* border: 1px solid white; */
+	padding: 2% 0 2% 0;
+	background-color: black;
+	height: 50px;
+	
+	display: flex;
+}
+
+#footerNav ul {
+	display: flex;
+}
+
+#footerNav li {
+	/* border: solid black 1px; */
+	font-size: 1.5em;
+	padding: 0 5% 0 15%;
+	list-style-type: none;
+
+	align-self: center;
+}
+
+#footerNav a {
+	color: white;
+	text-decoration: none;
+}
+
+#footerImg {
+	height: 150px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#imageFooter {
+	width: 300px;
+	height: 80px;
+	margin: 0 3% 0 0;
+}
+
+#footerId p {
+	text-align: center;
+	color: white;
 }

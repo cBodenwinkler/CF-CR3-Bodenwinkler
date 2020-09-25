@@ -13,7 +13,7 @@ function calculateInsurance() {
 	// Outer Comparison to check if Input was sufficient
 	if (inpName == "" || inpAge == 0 || inpHp == 0){
 		// Output when Input was NOT sufficient
-		document.getElementById("result").innerHTML = "No Input given";
+		document.getElementById("result").innerHTML = "Please Submit ALL the Data";
 	} else {
 		// inner Comparison for Calculation
 		if (inpCountry == "austria") {
