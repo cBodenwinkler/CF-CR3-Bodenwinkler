@@ -12,31 +12,61 @@ html {
 	padding: 0;
 }
 
-/* HEADER----------------------------------------------------------------------------------------------- */
-header {
-	border: solid yellow 5px;
+body {
+	max-width: 1400px;
+	margin: 0 auto;
+	float: none;
+	font-family: "Arial";
 }
 
+/* HEADER----------------------------------------------------------------------------------------------- */
+header {
+	background-color: #FFF3F3;
+}
 
+/* Logo and Banner */
+#headerImg {
+	/* border: 1px solid black; */
+	height: 130px;
+	padding-top: 3%;
+	padding-bottom: 3%;
 
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
 
+/* NAVBAR */
+#headerNav {
+	/* border: 1px solid black; */
+	background-color: #8E1616;
+	height: 2.5em;
+	
+	display: flex;
+}
 
+#headerNav ul {
+	display: flex;
+}
 
+#headerNav li {
+	/* border: solid black 1px; */
+	font-size: 1.5em;
+	padding: 0 5% 0 15%;
+	list-style-type: none;
 
+	align-self: center;
+}
 
-
-
-
-
-
+#headerNav a {
+	color: white;
+	text-decoration: none;
+}
 
 /* MAIN CONTENT ---------------------------------------------------------------------------------------- */
 main {
-	border: solid 1px black;
+	/* border: solid 1px black; */
 }
-
-
-
 
 /* HeroImage */
 #heroImg {
@@ -44,7 +74,57 @@ main {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	height: 600px;
 }
+
+/* Heading h1 */
+#headingH1 {
+	/* border: 1px solid yellow; */
+	height: 15%;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0 4% 0 4%;
+
+}
+
+#headingH1 h1{
+	color: white;
+}
+
+/* Input Form */
+#inputOutputForm {
+	border: solid 3px darkgray;
+	height: 90%;  /* manipulate here for overlapping of Form */
+	background-color: white;
+	opacity: 0.75;
+	margin: 0 10% 0 10%;
+
+	display: flex;
+	flex-direction: column;
+}
+
+/* mainSUB - Content */
+#mainSubContent {
+	background-color: #D4D4D4;
+	height: 170px;
+	text-align: center;
+
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#mainSubContent h2 {
+	font-size: 2em;
+	font-weight: normal;
+}
+
+#mainSubContent p {
+	font-size: 1.2em;
+}
+
 
 
 
@@ -57,11 +137,11 @@ main {
 
 
 #result {
-	color: white;
+	color: green;
 }
 /* SUB CONTENT ----------------------------------------------------------------------------------------- */
 #subContent {
-	border: solid 1px black;
+	/* border: solid 1px black; */
 }
 
 

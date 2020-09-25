@@ -7,9 +7,9 @@ function calculateInsurance() {
 	var inpCountry = document.getElementById("countrySelect").value;
 	var inpHp = Number(document.getElementById("hpInput").value);
 
-
 	// Calculation of Insurance Cost - comparison based on Country
 	var insurance =	0;
+
 	// Outer Comparison to check if Input was sufficient
 	if (inpName == "" || inpAge == 0 || inpHp == 0){
 		// Output when Input was NOT sufficient
