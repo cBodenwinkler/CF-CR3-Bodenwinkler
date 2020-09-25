@@ -1,0 +1,62 @@
+/* ALL --------------------------------------------------------------------------------------------------*/
+html {
+	box-sizing: border-box;
+	font-family: Arial,Helvetica, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+/* HEADER----------------------------------------------------------------------------------------------- */
+header {
+	border: solid yellow 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN CONTENT ---------------------------------------------------------------------------------------- */
+main {
+	border: solid 1px black;
+}
+
+
+
+
+/* HeroImage */
+#heroImg {
+	background-image: url("../img/traffic.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+/* SUB CONTENT ----------------------------------------------------------------------------------------- */
+#subContent {
+	border: solid 1px black;
+}
+
+
+
+
+/* FOOTER----------------------------------------------------------------------------------------------- */
+footer {
+	border: solid black 1px;
+}
