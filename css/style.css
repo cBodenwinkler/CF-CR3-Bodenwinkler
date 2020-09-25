@@ -1,7 +1,7 @@
 /* ALL --------------------------------------------------------------------------------------------------*/
 html {
 	box-sizing: border-box;
-	font-family: Arial,Helvetica, sans-serif;
+	font-family: 'Roboto', 'Arial', sans-serif;
 }
 
 *,
@@ -16,8 +16,12 @@ body {
 	max-width: 1400px;
 	margin: 0 auto;
 	float: none;
-	font-family: "Arial";
 }
+
+/* DESKTOP VERSION------------------------------------------------ */
+
+
+
 
 /* HEADER----------------------------------------------------------------------------------------------- */
 header {
@@ -194,6 +198,7 @@ main {
 .subBoxes {
 	border: solid 3px lightgray;
 	border-top: solid 3px black;
+	border-radius: 2%;
 	width: 35%;
 	padding: 2%;
 }
