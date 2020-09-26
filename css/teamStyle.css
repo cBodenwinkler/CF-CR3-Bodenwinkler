@@ -1,0 +1,35 @@
+#teamID {
+	margin-top: 5%;
+	
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+.teamImage {
+	/* border: solid black 1px; */
+	width: 20%;
+	height: auto;
+}
+
+
+.teamImage img {
+	width: 100%;
+	height: 100%;
+}
+
+.teamImage p {
+	text-align: center;
+	font-size: 1.2em;
+}
+
+footer {
+	position: absolute;
+	height: 100px;
+}
+
+#teamMain h2 {
+	text-align: center;
+	margin-top: 8%;
+}
+

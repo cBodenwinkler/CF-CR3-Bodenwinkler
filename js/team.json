@@ -1,0 +1,31 @@
+var teamMembers =`
+[
+	{
+		"memberID": "1",
+		"name": "Alasdair O'Moore",
+		"email": "alOmoore@something.com",
+		"image": "https://images.unsplash.com/photo-1492567291473-fe3dfc175b45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=631&q=80",
+		"hobby": "Mountainbiking and Photography"
+	},
+	{
+		"memberID": "2",
+		"name": "Abdi Holman",
+		"email": "abdi@anything.com",
+		"image": "https://images.unsplash.com/photo-1502980426475-b83966705988?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1346&q=80",
+		"hobby": "Football"
+	},
+	{
+		"memberID": "3",
+		"name": "Levi Reeve",
+		"email": "leviRee@where.com",
+		"image": "https://images.unsplash.com/photo-1520466809213-7b9a56adcd45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80",
+		"hobby": "Traveling"
+	},
+	{
+		"memberID": "4",
+		"name": "Ty Collier",
+		"email": "TyCo@there.com",
+		"image": "https://images.unsplash.com/photo-1496346236646-50e985b31ea4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+		"hobby": "Music and Arts"
+	}
+]`; 

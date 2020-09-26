@@ -250,6 +250,9 @@ main {
 footer {
 	height: 250px;
 	background-color: black;
+
+	bottom: 0;
+	width: 100%;
 }
 
 #footerNav {
@@ -584,24 +587,4 @@ footer {
 	color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }/*----------------------------- End MediaQ Mobile--------------------- */
-
