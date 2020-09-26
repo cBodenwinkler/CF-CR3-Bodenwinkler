@@ -19,9 +19,9 @@ body {
 }
 
 /* DESKTOP VERSION------------------------------------------------ */
-
-
-
+@media screen
+	and (min-width: 481px) { 
+	
 
 /* HEADER----------------------------------------------------------------------------------------------- */
 header {
@@ -95,14 +95,16 @@ main {
 
 #headingH1 h1{
 	color: white;
+	font-weight: normal;
 }
 
 /* Input Form */
-#inputOutputForm {
+#inputOutputForm  {
+	position: relative;
 	border: solid 3px darkgray;
 	height: 90%;  /* manipulate here for overlapping of Form */
-	background-color: white;
-	opacity: 0.8;
+	background: rgba(255, 255, 255, 0.8);
+	/* opacity: 0.8; */
 	margin: 0 10% 0 10%;
 
 	display: flex;
@@ -111,7 +113,7 @@ main {
 }
 
 #inputOutputForm h1 {
-	padding: 3% 0 3% 0;
+	padding: 3% 0 0 0;
 	font-size: 2.5em;
 	text-align: center;
 	align-self: center;
@@ -119,30 +121,54 @@ main {
 }
 
 #inputForms {
-	border: 1px black solid;
-	width: 400px;
-	height: 300px;
-	padding: 5% 0 5% 0;
+	/* border: 1px black solid; */
+	width: 80%;
+	height: 250px;
+	padding: 0 0 0 0;
 
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: center;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#inputForms p {
+	font-size: 1em;
+	font-weight: bold;
 }
 
 .dataInput {
 	width: 40%;
+	/* border: solid black 1px; */
 }
 
 .inputClass {
-	/* Make Input Forms WHITE  */
+	background: white;
 }
 
+#nameInput, #ageInput, #hpInput, #countrySelect {
+	width: 100%;
+	height: 2em;
+	border: solid 1px gray;
+	border-radius: 3%;
+	font-size: 1.5em;
+}
 
+#submit {
+	border: none;
+	background-color: #339235;
+	color: white;
+	width: 200px;
+	height: 50px;
+	border-radius: 15%;
+	font-size: 2em;
+}
 
-
-
-
-
+#result {
+	font-size: 2em;
+	padding: 5% 0 0 0;
+	text-align: center;
+}
 
 
 
@@ -171,6 +197,7 @@ main {
 
 #result {
 	color: green;
+	text-align: center;
 }
 /* SUB CONTENT ----------------------------------------------------------------------------------------- */
 #subContent {
@@ -184,7 +211,8 @@ main {
 #subContent li {
 	/* border: solid black 1px; */
 	width: 70%;
-	margin: 5% 0 5% 7%;
+	margin: 5% 0 5% 3%;
+	font-size: 0.9em;
 
 }
 
@@ -192,7 +220,19 @@ main {
 	padding-bottom: 5%;
 	margin-bottom: 5%;
 	border-bottom: 1px solid lightgray;
+	list-style: none;
+}
 
+#subContent li:before{
+	content: '✓';
+	color: turquoise;
+	font-weight: bolder;
+	padding-right: 5%;
+}
+
+#subContent h3 {
+	font-weight: normal;
+	font-size: 1.3em;
 }
 
 .subBoxes {
@@ -248,7 +288,7 @@ footer {
 
 #imageFooter {
 	width: 300px;
-	height: 80px;
+	height: 70px;
 	margin: 0 3% 0 0;
 }
 
@@ -256,3 +296,312 @@ footer {
 	text-align: center;
 	color: white;
 }
+
+
+}/*----------------------------- End MediaQ Desktop--------------------- */
+
+
+
+
+/* MOBILE - VERSION ---------------------------------------------------------- */
+@media screen  
+	and (max-width: 480px) {
+
+/* All - Mobile*/
+body {
+}
+
+
+
+/* Header + Navbar */
+header {
+	background-color: #FFF3F3;
+}
+
+/* Logo and Banner */
+#headerImg {
+	/* border: 1px solid black; */
+	height: 130px;
+	padding-top: 3%;
+	padding-bottom: 3%;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#spanBanner {
+	display: none;
+}
+
+/* NAVBAR MOBILE */
+#headerNav {
+	/* border: 1px solid black; */
+	background-color: #8E1616;
+	height: 2.5em;
+	
+	display: flex;
+}
+
+#headerNav ul {
+	display: flex;
+}
+
+#headerNav li {
+	/* border: solid black 1px; */
+	font-size: 1.5em;
+	padding: 0 5% 0 15%;
+	list-style-type: none;
+
+	align-self: center;
+}
+
+#headerNav a {
+	color: white;
+	text-decoration: none;
+}
+
+/* MAIN CONTENT MOBILE */
+/* HeroImage */
+#heroImg {
+	background-image: url("../img/traffic.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 700px;
+}
+
+/* Heading h1 */
+#headingH1 {
+	/* border: 1px solid yellow; */
+	height: 15%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 2% 0 4%;
+
+}
+
+#headingH1 h1{
+	color: white;
+	font-weight: normal;
+}
+
+/* Input Form */
+#inputOutputForm  {
+	/* position: relative; */
+	border: solid 3px darkgray;
+	height: 85%;  /* manipulate here for overlapping of Form */
+	background: rgba(255, 255, 255, 0.8);
+	margin: 0 2% 0 2%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#inputOutputForm h1 {
+	padding: 5%;
+	font-size: 2em;
+	text-align: center;
+	align-self: center;
+	font-weight: normal;
+	margin-bottom: 5%;
+}
+
+#inputForms {
+	/* border: 1px black solid; */
+	width: 100%;
+	height: 250px;
+	/* padding: 0 0 0 0; */
+
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#inputForms p {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.dataInput {
+	width: 70%;
+	margin-top: 5%
+	/* border: solid black 1px; */
+}
+
+.inputClass {
+	background: white;
+}
+
+#nameInput, #ageInput, #hpInput, #countrySelect {
+	width: 100%;
+	height: 2em;
+	border: solid 1px gray;
+	border-radius: 3%;
+	font-size: 1.5em;
+}
+
+#submit {
+	border: none;
+	background-color: #339235;
+	color: white;
+	width: 200px;
+	height: 50px;
+	border-radius: 15%;
+	font-size: 2em;
+	margin-top: 35%;
+}
+
+#result {
+	font-size: 1.5em;
+	padding: 5% 0 0 0;
+	text-align: center;
+	color: green;
+}
+
+/* mainSUB - Content */
+#mainSubContent {
+	/* border: solid black 1px; */
+	background-color: #D4D4D4;
+	height: 200px;
+	text-align: center;
+	padding: 2% 0 0 0;
+
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#mainSubContent h2 {
+	font-size: 1.5em;
+	font-weight: normal;
+	margin-bottom: 5%;
+}
+
+#mainSubContent p {
+	font-size: 1em;
+}
+
+/* SUB CONTENT -------------------------- */
+#subContent {
+	/* border: solid 1px black; */
+	margin: 10% 0 10% 0;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+#subContent li {
+	/* border: solid black 1px; */
+	width: 70%;
+	margin: 5% 0 5% 3%;
+	font-size: 0.9em;
+
+}
+
+#subContent ul {
+	padding-bottom: 5%;
+	margin-bottom: 5%;
+	border-bottom: 1px solid lightgray;
+	list-style: none;
+}
+
+#subContent li:before{
+	content: '✓';
+	color: turquoise;
+	font-weight: bolder;
+	padding-right: 5%;
+}
+
+#subContent h3 {
+	font-weight: normal;
+	font-size: 1.3em;
+}
+
+.subBoxes {
+	border: solid 3px lightgray;
+	border-top: solid 3px black;
+	border-radius: 2%;
+	width: 80%;
+	padding: 7%;
+	margin-bottom: 5%
+}
+
+
+/* Footer - Mobile */
+footer {
+	height: 200px;
+	background-color: black;
+}
+
+#footerNav {
+	/* border: 1px solid white; */
+	padding: 2% 0 2% 0;
+	background-color: black;
+	height: 50px;
+	
+	display: flex;
+}
+
+#footerNav ul {
+	display: flex;
+}
+
+#footerNav li {
+	font-size: 1.5em;
+	padding: 0 5% 0 15%;
+	list-style-type: none;
+
+	align-self: center;
+}
+
+#footerNav a {
+	color: white;
+	text-decoration: none;
+}
+
+#footerImg {
+	height: 100px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#imageFooter {
+	width: 300px;
+	height: 70px;
+	margin: 0 3% 0 0;
+}
+
+#footerId p {
+	text-align: center;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}/*----------------------------- End MediaQ Mobile--------------------- */
+
